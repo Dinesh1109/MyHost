@@ -1,0 +1,166 @@
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+   
+}
+
+.background{
+    background: url(../plans-background.jpg) center/cover;
+    filter:grayscale(40%);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+}
+
+.main-header{
+    margin-bottom: 3.9rem;
+}
+.main-section{
+    position: relative;  /* always to hide something like the batch if the position is absolutr its parent container should have relative postioning */
+    padding: 1.2rem 4.8rem;
+    background-color: #b8f1b8;
+    margin: 5rem 1.2rem 1.2rem 0;
+    border: 5px solid #0e4f1f;
+    width: 70%;
+    border-left: 0;
+    z-index: 1;
+     overflow: hidden;  /*this is used to hide the batch from leaking outside the container */
+}
+
+.main-section-premium{
+
+    padding: 1.2rem 4.8rem;
+    background-color: #0e4f1f;
+    margin: 5rem 1.2rem 1.2rem 0;
+    border: 5px solid #0e4f1f;
+    width: 70%;
+    border-left: 0;
+}
+
+
+.main-free{
+    float: right;
+    border-right: none;
+    border-left: 5px solid #0e4f1f;
+    margin-right: 0;
+}
+
+.badge{
+    position: absolute;
+    margin: 0;
+    font-size: 0.7rem;
+    border: 2px solid #3E6D9C;
+    background-color: #3E6D9C; 
+    padding: 0.5rem ;
+    color: white;
+    /* display: inline-block; */
+    top: 0 ;
+    right: 0 ;
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    transform-origin: center;
+    text-align: center;
+    width: 12rem;
+
+
+}
+
+.clear{
+   clear: both;
+}
+
+.main-section:hover,
+.main-section:active{
+    border-color: #3E6D9C;
+   
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main-section-premium:hover,
+.main-section-premium:active{
+    border-color:#3E6D9C;
+   
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main-free:hover,
+.main-free:active{
+    border-color: #3E6D9C;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+ 
+}
+
+.main-section__link{
+    text-decoration: none;
+    padding: 0 1.2rem;
+    /* display: block; */
+}
+
+
+
+.main-section__link h1{
+      font-weight: bold;
+      color: #000;
+}
+
+.main-section__link h3{
+    font-weight: bold;
+    color: #676464;
+}
+
+.main-section__link p{
+
+    background-color: #fff;
+    color: #0e4f1f;
+    border: 2px solid #0e4f1f; ;
+    padding: 0.5rem;
+    margin: 0;
+}
+.main-section__linked{
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+
+.main-section__linked h1{
+    font-weight: bold;
+    color: white;
+}
+
+.main-section__linked h3{
+    font-weight: bold;
+    color: #918f8f;
+}
+
+.main-section__linked p{
+    background-color: #fff;
+    color: #0e4f1f;
+    border: 2px solid #0e4f1f; ;
+    padding: 0.5rem;
+   margin: 0;
+    
+}
+
+@media(min-width:42rem){
+    main{
+        max-width: 1500px;
+    }
+}
+
+@media(min-width:1500px){
+    .main-section{
+        border-left:5px solid #0e4f1f;
+    }
+    .main-free{
+        border-right:5px solid #0e4f1f;
+    }
+    .main-section-premium{
+        border-right:5px solid #0e4f1f;
+    }
+    
+}

@@ -1,0 +1,271 @@
+
+
+#product-description{
+    background: linear-gradient(to top ,rgba(80,68,18,0.5) 10% ,transparent) ,url("freedom.jpg") center/cover no-repeat border-box;
+
+    /* background-image:url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% top 0%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box;
+    padding: 15px; */
+    width: 100vw;
+    height: 60vh;
+
+    /* background-image: linear-gradient(180deg,red 30%,rgb(225, 255, 0) 50%,white); */
+    /* background-image: radial-gradient(ellipse at 20% 80%,red,green,blue); */
+}
+.title{
+    color:#20c333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#product-description h1{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    /* bottom: 14%;
+    left: 3%; */
+    top: 85%;
+    left: 2%;
+
+}
+
+@media(min-width: 40rem) , (min-height:40rem)  {
+    #product-description{
+        height: 60vh;
+        background-position: left 50% top 25%;
+    }
+
+    #product-description h1{
+        font-size: 2rem;
+    }
+
+}
+
+#plans{
+    text-align: center;
+   
+}
+
+.plan{
+    background-color: #d5ffdc;
+    display: block;
+     width: 100%;
+    padding: 1.5rem 0;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.plan-highlight{
+        color: #fff;
+        background-color: #0f841c;
+
+}
+
+.plan-subgroup{
+    background-color: white;
+    color:  #0c911c;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0,0.5);
+    border-radius: 0.32rem;
+    padding: 0.32rem 0;
+    width: 80%;
+    margin: auto;
+}
+
+.plan__title{
+    color: #0e4f1f;
+
+}
+
+.plan__price{
+    color: #777373;
+}
+
+.plan-highlight .plan__title{
+    color: white;
+
+}
+
+.plan-highlight .plan__price{
+    color: #0a3c17;
+}
+
+.plan__features{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.plan__features li{
+    margin: 0.65rem 0;
+   
+}
+
+@media(min-width:42rem){
+
+
+    .plan-highlight{
+         box-shadow :2px 2px 5px 2px rgba(0, 0, 0,0.5);
+
+    }
+    .plan__list{
+         width: 100%;
+         text-align: center;
+        }
+
+    .plan{
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        margin: 0.2rem;
+        min-width: 13rem;
+        max-width: 25rem;
+    }
+}
+
+.button{
+     font: inherit;  /*so that the system font can be overwritten by applied font */
+     background-color:#0a3c17;
+     color: #fff;
+     border: 1.5px solid #0a3c17;
+     padding: 0.5rem 1.2rem;
+     border-radius: 0.5rem;
+     margin-bottom:0;
+     margin-top:0.7rem;
+     font-weight: bold;
+     cursor: pointer;
+
+}
+
+.button:hover,
+.button:active{
+    background-color: white;
+    color: #0a3c17;
+}
+
+.button:focus{
+    outline: none;
+}
+
+/* features section */
+
+#features{
+    background-color: #3E6D9C;
+    padding: 1rem;
+    margin-top:5rem;
+
+
+}
+
+#features h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color:#fff; 
+    margin: 2rem;
+
+}
+
+
+.feature__items{
+    
+    /* display: block; */
+    width: 100%;
+    list-style: none;
+    
+    
+}
+
+.feature__items p{
+    font-size: 1.1rem;
+}
+
+.feature__image{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin: auto;   /*to center the element*/
+    width: 8rem;
+    height: 8rem;
+    padding: 1.2rem;
+}
+
+@media(min-width:42rem){
+    .feature__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .feature__items{
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        max-width: 25rem;
+    }
+}
+
+.description{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+.modal {
+    position: fixed;
+    opacity: 0; /*display:none was replaced by this for the sake of trasition*/
+    transform: translateY(-3rem);
+    transition: opacity 300ms ease-out,  transform 500ms ease-out;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+  }
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #0e4f1f;
+    border-radius: 10%;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--negative {
+    background: red;
+    border-color: red;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+  }
